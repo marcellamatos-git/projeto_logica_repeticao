@@ -48,7 +48,24 @@ btnfrase.addEventListener('click' , (evt) =>{
     }
 })
 
-//FOR IN
+//Coleçao de dados - array
+const presentes = ["bicleta", 'celular', 'camisa flamengo']
+ 
+const divArray = document.querySelector('#div-array')
+ 
+
+for(i = 0;i < 3;i++ ){
+    divArray.innerHTML += `${presentes[i]} <br>`
+}
+
+
+//For in
+const divForin = document.querySelector('#div-forin')
+
+for(let posicao in presentes){
+    divForin.innerHTML += `${presentes[posicao]} <br>`
+}
+
 
 
 
