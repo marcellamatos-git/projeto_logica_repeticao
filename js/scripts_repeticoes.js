@@ -66,6 +66,21 @@ for(let posicao in presentes){
     divForin.innerHTML += `${presentes[posicao]} <br>`
 }
 
+//for of
 
+const divforof = document.querySelector('#div-forof')
+
+for(let elemento of presentes){
+    divforof.innerHTML += `${elemento} <br>`
+}
+
+//foreach
+const divforEach = document.querySelector('#div-foreach')
+
+presentes.forEach((elemento, posicao)=>{
+    divforEach.innerHTML += `${posicao + 1} - ${elemento} <br>`
+})
+
+//coleçao de objetos literais - array
 
 
