@@ -98,5 +98,12 @@ for(i = 0; i < pessoas.length;i++){
     divlistobjfor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade} R$ ${pessoas[i].renda.toFixed(2).replace('.',',')} <br>`
 }
 
+//listando objeto literal for in
+const divlistobjforin = document.querySelector('#div-listaobj-forin')
+
+for(let indice in pessoas){
+    divlistobjforin.innerHTML +=`${indice} - ${pessoas[indice].nome}, ${pessoas[indice].idade}, R$ ${pessoas[indice].renda.toFixed(2).replace('.',',')} <br>`
+}
+
 
 
