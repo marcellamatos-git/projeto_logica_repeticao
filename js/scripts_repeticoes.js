@@ -91,6 +91,29 @@ const pessoas = [
 
 ]
 
+//manipulando array
+//adicionando elementos no array
+pessoas.push ({nome:'magnolia', idade:32, renda: 3500})
+pessoas.unshift({nome:"joedison", idade: 40, renda: 6000})
+
+//Splice adicionar em uma posicçao sem excluir um elemento
+pessoas.splice(3,0, {nome: "extraterrestre", idade:800, renda: 0.50})
+
+//Splice adiciona em uma posição e nesse exemplo exclui mais dois elementos a partiri da posicao(indice) informado
+pessoas.splice(3,2,{nome:'extraterrestre', idade:990, renda:0.50})
+
+//splice exclui uma posiçao e nesse exmplo exclui apenas o elemento da posição(indice) informada
+pessoas.splice(1,0)
+
+//splice exclui dois elementos a partir da posicao informada
+pessoas.splice(2,2)
+
+//excluir o ultimo elemento do array
+pessoas.pop()
+
+//exibir a quantidade de elementos em um array
+console.log('total de elementos no array pessoas ======>', pessoas.length)
+
 //listando objeto literal pelo forin
 const divlistobjfor = document.querySelector('#div-listaobj-for')
 
@@ -122,7 +145,7 @@ const divlistobjforeach = document.querySelector('#div-listaobj-foreach')
 
 pessoas.forEach((elem, i)=>{
     divlistobjforeach.innerHTML += `${i + 1} - ${elem.nome}, ${elem.idade} R$ ${elem.renda.toFixed(2).replace('.',',')} <br>`
-
+    
 })
 
 
