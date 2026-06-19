@@ -17,3 +17,5 @@
     return valorcalculo
 
  }
+
+ export{calculopercentual}

@@ -1,3 +1,7 @@
+import {calculopercentual} from "./scripts_calculo.js"
+
+
+
 function mensagem(){
     console.log('uma mensagem')
 }
@@ -10,13 +14,16 @@ function mensagemlinda(txt){
 mensagemlinda('Brasil vai dar um pau no brasil')
 
 function somanumeros(num1, num2){
-    reposta = num1 + num2
+    let reposta = num1 + num2
+
+    return reposta
 } 
 
 console.log('As somas dos numeros', somanumeros(10,58))
 
 const multiplicacao = function(num1, num2){
-    reposta = num1 * num2
+     let reposta = num1 * num2
+     return reposta
 }
 
 console.log(multiplicacao(64, 5))
@@ -32,12 +39,12 @@ msgarrow()
 const divisaonum = (valor1, valor2) =>{
     
     if ((valor1 > 0) && (valor2 > 0)){
-        reposta  = valor1 / valor2
+        let reposta = valor1 / valor2
         }else{
             reposta = 'nao é possivel diviao por 0'
         }
 
-        return reposta
+        let reposta
     }
 
     console.log(divisaonum(10,8000))
@@ -97,3 +104,7 @@ const sorteio = setInterval(() => {
         numSorteado = 0
     }
 }, 2000)*/
+
+
+//chamando a funcao de outro arquivo
+console.log('calculo da função calculopercentual do arquivo scripts_calculos.js----->', calculopercentual(750))
